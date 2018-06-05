@@ -16,7 +16,7 @@ def run():
         X[i][1]=data[i,0]
         Y[i]=data[i,1]
     Xt=np.transpose(X)
-    XtX_ =np.linalg.inv(XtX) 
+    XtX_ =np.linalg.inv(Xt) 
     XtX_Xt=(XtX_).dot(Xt)
     [Theta0, Theta1]=XtX_Xt.dot(Y)
     print('Theta0=',Theta0,'Theta1=', Theta1)
